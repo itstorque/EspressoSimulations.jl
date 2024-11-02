@@ -12,7 +12,6 @@ SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 Trapz = "592b5752-818d-11e9-1e9a-2b8ca4a44cd1"
 
 [compat]
-SparseArrays = "1.11.0"
 julia = "1.6.7"
 
 [extras]
