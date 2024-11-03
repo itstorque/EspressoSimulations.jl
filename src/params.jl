@@ -1,3 +1,32 @@
+"""
+    EspressoParameters(R0, L, a1, a2, 
+                        ρ_out, ρ_grounds, 
+                        csat, cs0, 
+                        ϕs, Mout, P, 
+                        Ds_star, Deff_star, k, 
+                        tshot, vol_fracs)
+
+Input parameters for the simulation that describe various parameters
+that influence the extraction.
+
+**Arguments**
+- `R0::Float64`: Puck radius
+- `L::Float64`: Cylinder height
+- `a1::Float64`: fine grain radii [m]
+- `a2::Float64`: coarse grain radii [m]
+- `ρ_out::Float64`: density of water at 90 deg C [kg/m3]
+- `ρ_grounds::Float64`: density of roasted coffee bulk [kg/m3]
+- `csat::Float64`: saturation concentration of water outside grain. temperature dependent [kg/m3]
+- `cs0::Float64`: concentration of solubles in the grains initially [kg/m3], assuming preinfusion, see [Heat and mass transfer in dispersed two-phase flows](https://researchrepository.ul.ie/articles/thesis/Heat_and_mass_transfer_in_dispersed_two-phase_flows/19814533/1?file=35260576) for pre-infusion details
+- `ϕs::Float64`: volume fraction of grounds in a packed bed [unitless] [Heat and mass transfer in dispersed two-phase flows](http://refhub.elsevier.com/S2590-2385(19)30410-2/sref30)
+- `Mout::Float64`: mass of the beverage [kg]
+- `P::Float64`: pressure [bar]
+- `Ds_star::Float64`: 
+- `Deff_star::Float64`: 
+- `k::Float64`: 
+- `tshot::Float64`: 
+- `vol_fracs::Float64`: 
+"""
 Base.@kwdef mutable struct EspressoParameters
 
     R0:: Float64

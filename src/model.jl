@@ -1,6 +1,16 @@
 using LinearAlgebra
 using SparseArrays
 
+"""
+    build_mass(sim_params)
+
+Build the mass matrix for our simulation from a set of 
+`SimulationParameters`. This will generate a \$2N^2+N\$
+block tridiagonal matrix.
+
+**Arguments**
+- `sim_params::SimulationParameters`: simulation parameters to construct a mass matrix for
+"""
 function build_mass(sim_params::SimulationParameters)
 
     N, dr, r = sim_params.Nx, sim_params.dx, sim_params.x

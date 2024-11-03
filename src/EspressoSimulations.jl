@@ -7,7 +7,7 @@ using Trapz: trapz
 # using Interpolations
 
 # ODE Setup
-export EspressoParameters, SimulationParameters, to_odeproblem
+export EspressoParameters, SimulationParameters, to_odeproblem, test
 
 # process ODESolution
 export extraction_yield, extraction_percentage
