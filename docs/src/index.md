@@ -13,3 +13,9 @@ EspressoParameters
 ```@docs
 EspressoSimulations.build_mass
 ```
+
+### Post-processing
+
+```@docs
+extraction_percentage
+```

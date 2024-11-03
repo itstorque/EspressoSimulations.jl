@@ -7,6 +7,16 @@ function extraction_percentage(sol:: ODESolution, espresso_params:: EspressoPara
     extraction_percentage(sol, dimensionless_params, sim_params; cumul=cumul)
 end
 
+"""
+    extraction_percentage(sol, dimensionless_params, sim_params; 
+                            cumul=false)
+
+**Arguments:**
+- `sol::ODESolution`
+- `dimensionless_params::DimensionlessParameters`
+- `sim_params::SimulationParameters`
+- `cumul::Bool=false`
+"""
 function extraction_percentage(sol:: ODESolution, dimensionless_params:: DimensionlessParameters, sim_params:: SimulationParameters; cumul::Bool=false)
     ϕs = dimensionless_params.ϕs
     q_z = dimensionless_params.q_z
