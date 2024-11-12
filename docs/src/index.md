@@ -11,7 +11,7 @@ EspressoParameters
 ### Backend
 
 ```@docs
-EspressoSimulations.build_mass
+EspressoSimulations.mass_matrix
 ```
 
 ### Post-processing

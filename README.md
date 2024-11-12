@@ -11,4 +11,6 @@ A multi-scale homogenized advection diffusion model of espresso extraction based
 
 [2] [Differentialequations.jl--a performant and feature-rich ecosystem for solving differential equations in julia](https://github.com/SciML/DifferentialEquations.jl)
 
-[2] [Systematically improving espresso - Manuscript](https://pure.hud.ac.uk/ws/portalfiles/portal/18815501/Manuscript.pdf)
+[3] [Systematically improving espresso - Manuscript](https://pure.hud.ac.uk/ws/portalfiles/portal/18815501/Manuscript.pdf)
+
+[4] [Efficient Conservative Numerical Schemes for 1D Nonlinear Spherical Diffusion Equations with Applications in Battery Modeling, Zeng et al.](https://dspace.mit.edu/bitstream/handle/1721.1/91234/Bazant_Efficient%20conservative.pdf?sequence=1&isAllowed=y)

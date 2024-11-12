@@ -88,17 +88,31 @@ Base.copy(s::EspressoParameters) = EspressoParameters(
 )
 
 struct SimulationParameters
-    Nx:: Int# = 40
-    dx:: Float64# = 1 / (N - 1)
-    x::LinRange# = LinRange(0, 1, N)
+    Nx:: Int
+    dx:: Float64
+    x::LinRange
 
-    T_end:: Float64# = 10
+    T_end:: Float64
 
     function SimulationParameters(; Nx:: Int, T_end:: Float64)
         dx = 1/(Nx-1)
         x = LinRange(0, 1, Nx)
         return new(Nx, dx, x, T_end)
     end
+
+    function SimulationParameters(Nx::Int, dx::Float64, x::LinRange, T_end::Float64)
+        
+        @assert x[1] == 0
+        @assert x[Nx] == 1
+        @assert length(x) == Nx
+        @assert diff(x)==dx
+        @assert T_end > 0.
+
+        return new(Nx, dx, x, T_end)
+    end
+
+
+
 
 end
 
